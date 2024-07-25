@@ -1,0 +1,30 @@
+<div class="container border-box">
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-5">
+      <input type="text" class="form-control small-search"
+
+      placeholder="Search for a book" [(ngModel)]="searchTerm"
+        (input)="filterBooks()">
+      <div class="book-list" #scrollContainer>
+        @for (book of filteredBooks; track $index) {
+        <div>
+          <div (click)="setBook(book)">
+            <app-book-card [book]="book"></app-book-card>
+          </div>
+        </div>
+        }
+        @if (isLoading) {
+        <p>Loading...</p>
+        }
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mt-5 book-list">
+      <app-selected-books [viewMode]="currentBook ? true : false" [selectedBooks]="selectedBooks"></app-selected-books>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 mt-5 book-list">
+      <app-list-preview [books]="selectedBooks"></app-list-preview>
+    </div>
+  </div>
+</div>

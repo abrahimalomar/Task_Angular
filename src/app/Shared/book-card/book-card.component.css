@@ -1,0 +1,25 @@
+
+
+  .book-card {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .book-card:hover {
+    background-color: #f8f9fa;
+    color: black;
+  }
+  
+
+  .btn-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-delete i {
+    color: red;
+    font-size: 20px;
+  }
+  
+
+  

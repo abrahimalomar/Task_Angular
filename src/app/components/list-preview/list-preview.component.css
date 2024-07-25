@@ -1,0 +1,32 @@
+.list-preview {
+  background-color: #f5deb3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #000;
+  margin: 0 5px;
+}
+
+.bg-lightblue {
+  background-color: lightblue;
+}
+
+.bg-lightpink {
+  background-color: lightpink;
+}
+
+.bg-lighttan {
+  background-color: #F5DEB3;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}

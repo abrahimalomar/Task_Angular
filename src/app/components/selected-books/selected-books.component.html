@@ -1,0 +1,13 @@
+<div cdkDropList class="example-list mt-2">
+  <div class="text-center mb-3">
+    <span>Selected Books</span>
+  </div>
+  <div class="book-list">
+    @for (selectedBook of selectedBooks; track $index) {
+    <div cdkDrag>
+      <app-book-card [book]="selectedBook" [showDeleteButton]="true"
+        (onDelete)="remove(selectedBook.key)"></app-book-card>
+    </div>
+    }
+  </div>
+</div>

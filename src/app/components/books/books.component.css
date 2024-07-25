@@ -1,0 +1,35 @@
+.border-box {
+  border: 2px solid black;
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.card-gap {
+  margin-bottom: 3rem;
+}
+
+.book-list {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 15px;
+}
+
+.book-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.book-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.book-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.small-search {
+  max-width: 365px; 
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
